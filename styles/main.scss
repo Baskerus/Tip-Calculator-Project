@@ -1,2 +1,37 @@
 @import "globals";
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 14vh;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.7rem;
+  color: hsl(184, 11%, 27%);
+}
+
+.calculator-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  bottom: 0;
+
+  height: 86%;
+  width: 100vw;
+  border-radius: 2rem 2rem 0rem 0rem;
+
+  background-color: $light-grayish-cyan-two;
+  padding: 1.8rem;
+
+  .small-title {
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: $dark-grayish-cyan-dark;
+  }
+}
