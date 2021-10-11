@@ -54,7 +54,7 @@ body {
   height: 86%;
   width: 100vw;
   border-radius: 2rem 2rem 0rem 0rem;
-  background-color: #f4fafa;
+  background-color: white;
   padding: 1.8rem;
 }
 
@@ -62,5 +62,63 @@ body {
   font-size: 1rem;
   font-weight: 600;
   color: #5e7a7d;
+}
+
+.wide-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #f4fafa;
+  color: #00494d;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.wide-display img {
+  height: 100%;
+}
+
+.tip-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  border-radius: 0.4rem;
+  background-color: #00494d;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.custom {
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: #f4fafa;
+  color: #5e7a7d;
+}
+
+.tip-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
