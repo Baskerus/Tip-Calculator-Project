@@ -9,6 +9,15 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Space Mono";
   font-size: 24px;
   background-color: #c5e4e7;
@@ -49,13 +58,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: absolute;
   bottom: 0;
   height: 86%;
   width: 100vw;
+  max-width: 30rem;
   border-radius: 2rem 2rem 0rem 0rem;
   background-color: white;
-  padding: 1.8rem;
+  padding: 2.2rem 1.8rem;
+}
+
+.calculator-wrapper .section-title {
+  margin-bottom: 0.5rem;
 }
 
 .calculator-wrapper .small-title {
@@ -120,5 +137,70 @@ body {
       grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
   width: 100%;
+}
+
+.total-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 16rem;
+  padding: 2.4rem 1.4rem 1.4rem 1.4rem;
+  border-radius: 1rem;
+  background-color: #00494d;
+}
+
+.total-wrapper .total-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.total-wrapper .total-section .total-text {
+  line-height: 1.3rem;
+}
+
+.total-wrapper .total-section .light-title {
+  color: #c5e4e7;
+}
+
+.total-wrapper .total-section .person {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #7f9c9f;
+}
+
+.total-wrapper .total-section .tip-display {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+.total-wrapper .reset {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.4rem;
+  width: 100%;
+  background-color: #26c0ab;
+  color: #00494d;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */

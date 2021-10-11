@@ -17,16 +17,22 @@
 .calculator-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   position: absolute;
   bottom: 0;
 
   height: 86%;
   width: 100vw;
+  max-width: 30rem;
   border-radius: 2rem 2rem 0rem 0rem;
 
   background-color: white;
-  padding: 1.8rem;
+  padding: 2.2rem 1.8rem;
+
+  .section-title {
+    margin-bottom: 0.5rem;
+  }
 
   .small-title {
     font-size: 1rem;
@@ -79,4 +85,58 @@
   gap: 1rem;
 
   width: 100%;
+}
+
+.total-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 16rem;
+  padding: 2.4rem 1.4rem 1.4rem 1.4rem;
+  border-radius: 1rem;
+
+  background-color: $very-dark-cyan;
+
+  .total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .total-text {
+      line-height: 1.3rem;
+    }
+
+    .light-title {
+      color: $light-grayish-cyan-one;
+    }
+
+    .person {
+      font-size: 1rem;
+      font-weight: 600;
+      color: $dark-grayish-cyan;
+    }
+    .tip-display {
+      font-size: 2rem;
+      font-weight: 700;
+
+      color: $strong-cyan;
+    }
+  }
+
+  .reset {
+    align-self: center;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.4rem;
+
+    width: 100%;
+
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+  }
 }
