@@ -19,9 +19,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Space Mono";
   font-size: 24px;
   background-color: #c5e4e7;
@@ -96,6 +96,7 @@ body {
 }
 
 .wide-display {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,14 +109,47 @@ body {
   width: 100%;
   padding: 0.2rem 1rem;
   border-radius: 0.5rem;
+}
+
+.wide-display img {
+  position: absolute;
+  left: 2rem;
+  height: 35%;
+}
+
+.wide-display .input {
+  width: 100%;
+  font-family: inherit;
+  padding: 0.2rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  text-align: right;
   background-color: #f4fafa;
   color: #00494d;
   font-size: 1.6rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
-.wide-display img {
-  height: 100%;
+.wide-display .input:focus {
+  border: 2px solid #26c0ab;
+  outline: none;
+}
+
+.wide-display .input::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.wide-display .input:-ms-input-placeholder {
+  color: inherit;
+}
+
+.wide-display .input::-ms-input-placeholder {
+  color: inherit;
+}
+
+.wide-display .input::placeholder {
+  color: inherit;
 }
 
 .tip-option {
@@ -132,13 +166,60 @@ body {
   border-radius: 0.4rem;
   background-color: #00494d;
   font-size: 1.6rem;
+  font-weight: bolder;
   color: white;
+  cursor: pointer;
+}
+
+.tip-option:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
 }
 
 .custom {
+  display: block;
+  direction: rtl;
+  width: inherit;
+  padding: 1rem;
+  color: #00494d;
   font-weight: 700;
   font-size: 1.6rem;
   background-color: #f4fafa;
+  color: #5e7a7d;
+  cursor: pointer;
+  border: none;
+}
+
+.custom:hover {
+  background-color: #c5e4e7;
+}
+
+.custom:focus {
+  border: 2px solid #26c0ab;
+  outline: none;
+}
+
+.custom::-webkit-input-placeholder {
+  font-family: "Space Mono";
+  text-align: center;
+  color: #5e7a7d;
+}
+
+.custom:-ms-input-placeholder {
+  font-family: "Space Mono";
+  text-align: center;
+  color: #5e7a7d;
+}
+
+.custom::-ms-input-placeholder {
+  font-family: "Space Mono";
+  text-align: center;
+  color: #5e7a7d;
+}
+
+.custom::placeholder {
+  font-family: "Space Mono";
+  text-align: center;
   color: #5e7a7d;
 }
 
@@ -216,6 +297,11 @@ body {
   border: none;
   border-radius: 0.3rem;
   padding: 0.5rem;
+  cursor: pointer;
+}
+
+.total-wrapper .reset:hover {
+  background-color: #c5e4e7;
 }
 
 @media screen and (min-width: 1024px) {

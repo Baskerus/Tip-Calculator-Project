@@ -48,6 +48,7 @@
 }
 
 .wide-display {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,13 +57,35 @@
   padding: 0.2rem 1rem;
   border-radius: 0.5rem;
 
-  background-color: $light-grayish-cyan-two;
-  color: $very-dark-cyan;
-  font-size: 1.6rem;
-  font-weight: 700;
-
   img {
-    height: 100%;
+    position: absolute;
+    left: 2rem;
+    height: 35%;
+  }
+
+  .input {
+    width: 100%;
+
+    font-family: inherit;
+    padding: 0.2rem;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    text-align: right;
+
+    background-color: $light-grayish-cyan-two;
+    color: $very-dark-cyan;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:focus {
+      border: 2px solid $strong-cyan;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: inherit;
+    }
   }
 }
 .tip-option {
@@ -75,13 +98,42 @@
   background-color: $very-dark-cyan;
 
   font-size: 1.6rem;
+  font-weight: bolder;
   color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $light-grayish-cyan-one;
+    color: $very-dark-cyan;
+  }
 }
 .custom {
+  display: block;
+  direction: rtl;
+
+  width: inherit;
+  padding: 1rem;
+
+  color: $very-dark-cyan;
   font-weight: 700;
   font-size: 1.6rem;
   background-color: $light-grayish-cyan-two;
   color: $dark-grayish-cyan-dark;
+  &:hover {
+    background-color: $light-grayish-cyan-one;
+  }
+  cursor: pointer;
+  border: none;
+  &:focus {
+    border: 2px solid $strong-cyan;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-family: "Space Mono";
+    text-align: center;
+    color: $dark-grayish-cyan-dark;
+  }
 }
 .tip-grid {
   display: grid;
@@ -143,6 +195,11 @@
     border: none;
     border-radius: 0.3rem;
     padding: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $light-grayish-cyan-one;
+    }
   }
 }
 
