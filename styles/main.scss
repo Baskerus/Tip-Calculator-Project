@@ -14,18 +14,23 @@
   color: hsl(184, 11%, 27%);
 }
 
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 100%;
+}
 .calculator-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 
-  position: absolute;
-  bottom: 0;
+  height: clamp(750px, 87vh, 800px);
 
-  height: 86%;
   width: 100vw;
   max-width: 30rem;
-  border-radius: 2rem 2rem 0rem 0rem;
+  border-radius: 2rem 2rem 2rem 2rem;
 
   background-color: white;
   padding: 2.2rem 1.8rem;
@@ -140,3 +145,5 @@
     padding: 0.5rem;
   }
 }
+
+@import "media";
