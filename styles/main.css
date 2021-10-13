@@ -262,6 +262,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .total-wrapper .total-section .total-text {
