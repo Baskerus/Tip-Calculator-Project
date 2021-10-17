@@ -270,10 +270,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.total-wrapper .total-section .total-text {
-  line-height: 1.3rem;
-}
-
 .total-wrapper .total-section .light-title {
   color: #c5e4e7;
 }
@@ -285,9 +281,16 @@ body {
 }
 
 .total-wrapper .total-section .tip-display {
-  font-size: 2rem;
+  font-size: clamp(1rem, 8vw, 2rem);
   font-weight: 700;
   color: #26c0ab;
+  overflow: hidden;
+}
+
+.total-wrapper .total-section .total-text {
+  line-height: 1.3rem;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .total-wrapper .reset {

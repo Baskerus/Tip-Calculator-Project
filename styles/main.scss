@@ -108,8 +108,8 @@
   }
 }
 #selected {
- background-color: $strong-cyan;
- color: $very-dark-cyan;
+  background-color: $strong-cyan;
+  color: $very-dark-cyan;
 }
 
 .custom {
@@ -167,10 +167,6 @@
 
     margin-bottom: 1.5rem;
 
-    .total-text {
-      line-height: 1.3rem;
-    }
-
     .light-title {
       color: $light-grayish-cyan-one;
     }
@@ -181,10 +177,16 @@
       color: $dark-grayish-cyan;
     }
     .tip-display {
-      font-size: 2rem;
+      font-size: clamp(1rem, 8vw, 2rem);
       font-weight: 700;
 
       color: $strong-cyan;
+      overflow: hidden;
+    }
+
+    .total-text {
+      line-height: 1.3rem;
+      flex-wrap: nowrap;
     }
   }
 
