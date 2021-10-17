@@ -1,12 +1,12 @@
 @media screen and (min-width: 1024px) {
-body{
+  body {
     justify-content: center;
     height: 100vh;
-}
+  }
   .calculator-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    
+
     max-width: 60rem;
     height: 30rem;
     margin-bottom: 5vh;
@@ -17,23 +17,29 @@ body{
     width: 48%;
   }
 
-  .tip-grid{
+  .tip-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .total-wrapper{
-      justify-content: space-between;
-      padding: 3rem;
+  .total-wrapper {
+    justify-content: space-between;
+    padding: 3rem;
 
-      .reset{
-          margin-top: 5rem;
+    .reset {
+      margin-top: 5rem;
+    }
+    .total-section {
+      margin-bottom: 2rem;
+      .tip-display {
+        font-size: 2.6rem;
       }
-      .total-section{
-          margin-bottom: 2rem;
-          .tip-display{
-            font-size: 2.6rem;
-        }
-      }
+    }
+  }
+  .title {
+    padding-bottom: 6rem;
+  }
+  .attribution {
+    margin: -1rem;
   }
 }
