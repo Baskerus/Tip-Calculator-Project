@@ -281,7 +281,7 @@ body {
 }
 
 .total-wrapper .total-section .tip-display {
-  font-size: clamp(1rem, 8vw, 2rem);
+  font-size: clamp(0.3rem, 8vw, 2rem);
   font-weight: 700;
   color: #26c0ab;
   overflow: hidden;
@@ -311,6 +311,10 @@ body {
 
 .total-wrapper .reset:hover {
   background-color: #c5e4e7;
+}
+
+.error {
+  border: 2px solid rgba(255, 0, 0, 0.349) !important;
 }
 
 .attribution {
@@ -364,6 +368,7 @@ body {
   }
   .title {
     padding-bottom: 6rem;
+    margin: -1rem;
   }
   .attribution {
     margin: -1rem;

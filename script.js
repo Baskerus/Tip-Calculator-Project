@@ -66,6 +66,13 @@ function reset() {
 }
 
 function calculateAndDisplay() {
+  if (numOfPeople.value == "" || numOfPeople.value == 0) {
+    numOfPeople.classList.add("error");
+    return;
+  } else {
+    numOfPeople.classList.remove("error");
+  }
+
   let billTotal = parseFloat(bill.value);
   let tipPerPerson = (billTotal / 100) * currentTipPercent;
   let totalPerPerson = (billTotal / 100) * currentTipPercent + billTotal;
