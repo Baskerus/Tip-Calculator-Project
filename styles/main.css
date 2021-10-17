@@ -176,6 +176,11 @@ body {
   color: #00494d;
 }
 
+#selected {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
 .custom {
   display: block;
   direction: rtl;

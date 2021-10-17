@@ -107,6 +107,11 @@
     color: $very-dark-cyan;
   }
 }
+#selected {
+ background-color: $strong-cyan;
+ color: $very-dark-cyan;
+}
+
 .custom {
   display: block;
   direction: rtl;
@@ -143,7 +148,6 @@
 
   width: 100%;
 }
-
 .total-wrapper {
   display: flex;
   flex-direction: column;

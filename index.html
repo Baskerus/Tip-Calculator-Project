@@ -29,7 +29,7 @@
         <div class="tip-select">
           <div class="section-title small-title">Select Tip %</div>
           <div class="tip-grid">
-            <div class="tip-option">5%</div>
+            <div class="tip-option" id="selected">5%</div>
             <div class="tip-option">10%</div>
             <div class="tip-option">15%</div>
             <div class="tip-option">25%</div>
@@ -41,7 +41,7 @@
           <div class="section-title small-title">Number of People</div>
           <div class="wide-display">
             <img src="/images/icon-person.svg" alt="" />
-            <input class="input input-field" placeholder="0" id="ppl-num"></input>
+            <input class="input input-field" placeholder="0" maxlength="10" id="ppl-num" value="4"></input>
           </div>
         </div>
       </div>  
@@ -59,7 +59,7 @@
             <span class="small-title light-title">Total</span><br />
             <span class="person">/ person</span>
           </div>
-          <div class="tip-display">$0.00</div>
+          <div class="tip-display total-display">$0.00</div>
         </div>
         <button class="reset" id="reset">RESET</button>
       </div>
