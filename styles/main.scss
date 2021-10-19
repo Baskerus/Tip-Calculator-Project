@@ -124,11 +124,14 @@
   font-size: 1.6rem;
   background-color: $light-grayish-cyan-two;
   color: $dark-grayish-cyan-dark;
+
+  cursor: pointer;
+  border: none;
+
   &:hover {
     background-color: $light-grayish-cyan-one;
   }
-  cursor: pointer;
-  border: none;
+
   &:focus {
     border: 2px solid $strong-cyan;
     outline: none;
@@ -140,6 +143,7 @@
     color: $dark-grayish-cyan-dark;
   }
 }
+
 .tip-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -177,7 +181,7 @@
       color: $dark-grayish-cyan;
     }
     .tip-display {
-      font-size: clamp(.3rem, 8vw, 2rem);
+      font-size: clamp(0.3rem, 8vw, 2rem);
       font-weight: 700;
 
       color: $strong-cyan;
@@ -210,14 +214,11 @@
     }
   }
 }
-.error{
+.error {
   border: 2px solid rgba(255, 0, 0, 0.349) !important;
 }
-.attribution{
+.attribution {
   margin: 1.5rem;
 }
-
-
-
 
 @import "media";
